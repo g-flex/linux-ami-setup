@@ -33,4 +33,22 @@ find /var/www -type f -exec sudo chmod 0664 {} \;
 ~~`sudo yum install mod24_ssl`~~
 ```
 sudo yum install mod24_ssl.x86_64
+
+sudo yum-config-manager --enable epel
+wget https://dl.eff.org/certbot-auto
+chmod a+x certbot-auto
+```
+Edit  /etc/httpd/conf/httpd.conf to let vhost listen to port 80
+Add this at end
+```
+<VirtualHost *:80>
+    ServerName myexampledomain.com
+    ServerAlias myexampledomain.com
+    ErrorLog ${APACHE_LOG_DIR}/mysite-error.log
+    CustomLog ${APACHE_LOG_DIR}/mysite-access.log
+</VirtualHost>
+```
+```
+sudo ./certbot-auto --debug
+```
 ```
