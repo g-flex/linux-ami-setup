@@ -38,7 +38,9 @@ sudo yum-config-manager --enable epel
 wget https://dl.eff.org/certbot-auto
 chmod a+x certbot-auto
 ```
-Edit  /etc/httpd/conf/httpd.conf to let vhost listen to port 80
+Edit
+>/etc/httpd/conf/httpd.conf
+to let vhost listen to port 80
 Add this at end
 ```
 <VirtualHost *:80>
