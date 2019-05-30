@@ -49,6 +49,7 @@ Add this at end
     CustomLog ${APACHE_LOG_DIR}/mysite-access.log
 </VirtualHost>
 ```
+Uncomment and fill this line: `ServerName myexampledomain.com:80`
 ```
 sudo ./certbot-auto --debug
 ```
