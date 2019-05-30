@@ -1,2 +1,3 @@
 # Blank server setup guide
-Setup from scratch of a LAMP server, installation of npm and node-red, https setup (for node-red too).
+######The purpose is to have all infos and commands in a single place, preventing errors and time losses.
+---
