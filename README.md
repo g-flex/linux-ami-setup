@@ -1,7 +1,7 @@
 ## Blank server setup guide
 ##### Tested on the 2018/03 AMI release.
 ###### The purpose is to have all infos and commands in a single place, preventing errors and time losses.
-I will report here a sequence of mainly not explained commands, these commands are gathered from [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html) and [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-ami.html) AWS guides and [this node guide](https://www.e2enetworks.com/help/knowledge-base/how-to-install-node-js-and-npm-on-centos/). Head there if needed to understand what the commands actually do.
+I will report here a sequence of mainly not explained commands, these commands are gathered from [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html) and [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-ami.html) AWS guides, [this node guide](https://www.e2enetworks.com/help/knowledge-base/how-to-install-node-js-and-npm-on-centos/) and personal issue fixes of the aforementioned. Head there if needed to understand what the commands actually do.
 ***
 
 
