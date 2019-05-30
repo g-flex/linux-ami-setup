@@ -4,6 +4,7 @@
 I will report here a sequence of mainly not explained commands, these commands are gathered from [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html) and [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-ami.html) AWS guides and [this node guide](https://www.e2enetworks.com/help/knowledge-base/how-to-install-node-js-and-npm-on-centos/). Head there if needed to understand what the commands actually do.
 ***
 
+#### Apache
 ```
 sudo yum update -y
 sudo yum install -y httpd24 php70 mysql56-server php70-mysqlnd
@@ -26,7 +27,8 @@ find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 ```
 
-Letsencrypt:
+
+#### Letsencrypt
 ~~`sudo yum install mod24_ssl`~~
 ```
 sudo yum install mod24_ssl.x86_64
