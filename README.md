@@ -4,6 +4,7 @@
 I will report here a sequence of mainly not explained commands, these commands are gathered from [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/install-LAMP.html) and [this](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-ami.html) AWS guides and [this node guide](https://www.e2enetworks.com/help/knowledge-base/how-to-install-node-js-and-npm-on-centos/). Head there if needed to understand what the commands actually do.
 ***
 
+
 #### Apache
 ```
 sudo yum update -y
