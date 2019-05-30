@@ -45,8 +45,7 @@ Add this at end
 <VirtualHost *:80>
     ServerName myexampledomain.com
     ServerAlias myexampledomain.com
-    ErrorLog ${APACHE_LOG_DIR}/mysite-error.log
-    CustomLog ${APACHE_LOG_DIR}/mysite-access.log
+    ErrorLog /var/log/httpd/mysite-error.log
 </VirtualHost>
 ```
 Uncomment and fill this line: `ServerName myexampledomain.com:80`
