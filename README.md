@@ -48,7 +48,14 @@ Add this at end
     ErrorLog /var/log/httpd/mysite-error.log
 </VirtualHost>
 ```
-Uncomment and fill this line: `ServerName myexampledomain.com:80`
+Uncomment and fill this line:
+```ServerName myexampledomain.com:80```
 ```
 sudo ./certbot-auto --debug
 ```
+Edit *** /etc/httpd/conf.d/ssl.conf***
+```
+SSLCertificateFile /etc/letsencrypt/live/myexampledomain.com/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/myexampledomain.com/privkey.pem
+```
+Yummy! Server with SSL is on!
