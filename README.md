@@ -100,3 +100,12 @@ Check if ok
 node-v
 npm -v
 ```
+
+#### Node-red
+```
+sudo npm install -g node-red
+```
+Edit **/home/ec2-user/.node-red/settings.js** to enable ssl
+```
+
+```
