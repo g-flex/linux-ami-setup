@@ -114,8 +114,8 @@ var fs = require("fs");
 Uncomment and link certs
 ```
 https: {
-    key: fs.readFileSync('/etc/letsencrypt/live/expensebot.ggstudio.io/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/expensebot.ggstudio.io/fullchain.pem')
+    key: fs.readFileSync('/etc/letsencrypt/live/myexampledomain.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/myexampledomain.com/fullchain.pem')
 },
 ```
 Save. Remember to start node-red with sudo to grant permissions to read certificate files.
