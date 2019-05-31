@@ -119,3 +119,5 @@ https: {
 },
 ```
 Save. Remember to start node-red with sudo to grant permissions to read certificate files.
+
+##/usr/lib/node_modules/node-red/settings.js ??
