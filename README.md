@@ -61,7 +61,7 @@ SSLCertificateKeyFile /etc/letsencrypt/live/myexampledomain.com/privkey.pem
 Yummy! Server with SSL is on!
 ***
 
-### SQL
+### SQL & phpMyAdmin
 ```
 sudo service mysqld start
 sudo mysql_secure_installation
@@ -69,8 +69,6 @@ sudo mysql_secure_installation
 ```
 sudo chkconfig mysqld on
 ```
-***
-##### phpMyAdmin
 ```
 sudo yum install php70-mbstring.x86_64 php70-zip.x86_64 -y
 
