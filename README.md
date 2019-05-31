@@ -105,7 +105,16 @@ npm -v
 ```
 sudo npm install -g node-red
 ```
+**Run** `node-red` **once**, creating enviroment files.
 Edit **/home/ec2-user/.node-red/settings.js** to enable ssl
+At the beginning
 ```
-
+var fs = require("fs");
+```
+Uncomment and link certs
+```
+https: {
+    key: fs.readFileSync('/etc/letsencrypt/live/myexampledomain.com/privkey.pem'),
+    cert: fs.readFileSync('/etc/letsencrypt/live/myexampledomain.com/fullchain.pem')
+},
 ```
