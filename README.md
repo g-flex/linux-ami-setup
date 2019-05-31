@@ -122,7 +122,7 @@ var fs = require("fs");
 Uncomment and link certs
 ```
 https: {
-    key: fs.readFileSync(''),
-    cert: fs.readFileSync('/etc/letsencrypt/live/myexampledomain.com/fullchain.pem')
+    key: fs.readFileSync('nodecerts/node-key.pem'),
+    cert: fs.readFileSync('nodecerts/node-cert.pem')
 },
 ```
