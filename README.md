@@ -59,3 +59,31 @@ SSLCertificateFile /etc/letsencrypt/live/myexampledomain.com/fullchain.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/myexampledomain.com/privkey.pem
 ```
 Yummy! Server with SSL is on!
+
+
+### SQL
+```
+sudo service mysqld start
+sudo mysql_secure_installation
+```
+```
+sudo chkconfig mysqld on
+```
+
+#####phpMyAdmin
+```
+sudo yum install php70-mbstring.x86_64 php70-zip.x86_64 -y
+
+sudo service httpd restart
+
+cd /var/www/html
+```
+Head to [phpMyAdmin website](https://www.phpmyadmin.net/downloads/) and get latest tar version
+```
+wget https://files.phpmyadmin.net/phpMyAdmin/4.8.5/phpMyAdmin-4.8.5-all-languages.tar.gz
+
+mkdir phpMyAdmin && tar -xvzf phpMyAdmin-4.8.5-all-languages.tar.gz -C phpMyAdmin --strip-components 1
+
+rm phpMyAdmin-4.8.5-all-languages.tar.gz
+```
+Skkkrttt we got phpMyAdmin running!
