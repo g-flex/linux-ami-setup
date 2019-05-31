@@ -27,7 +27,7 @@ sudo chmod 2775 /var/www
 find /var/www -type d -exec sudo chmod 2775 {} \;
 find /var/www -type f -exec sudo chmod 0664 {} \;
 ```
-
+***
 
 ### Letsencrypt
 ~~`sudo yum install mod24_ssl`~~
@@ -59,7 +59,7 @@ SSLCertificateFile /etc/letsencrypt/live/myexampledomain.com/fullchain.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/myexampledomain.com/privkey.pem
 ```
 Yummy! Server with SSL is on!
-
+***
 
 ### SQL
 ```
@@ -69,8 +69,8 @@ sudo mysql_secure_installation
 ```
 sudo chkconfig mysqld on
 ```
-
-#####phpMyAdmin
+***
+##### phpMyAdmin
 ```
 sudo yum install php70-mbstring.x86_64 php70-zip.x86_64 -y
 
@@ -87,3 +87,4 @@ mkdir phpMyAdmin && tar -xvzf phpMyAdmin-4.8.5-all-languages.tar.gz -C phpMyAdmi
 rm phpMyAdmin-4.8.5-all-languages.tar.gz
 ```
 Skkkrttt we got phpMyAdmin running!
+***
