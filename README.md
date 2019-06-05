@@ -106,7 +106,7 @@ npm -v
 sudo npm install -g node-red
 ```
 **Run** `node-red` **once**, creating enviroment files.
-Edit **/home/ec2-user/.node-red/settings.js** to enable ssl
+Edit **/home/ec2-user/.node-red/settings.js** (and other setting files such as /usr/lib/node_modules/node-red/settings.js) to enable ssl
 At the beginning
 ```
 var fs = require("fs");
@@ -119,5 +119,3 @@ https: {
 },
 ```
 Save. Remember to start node-red with sudo to grant permissions to read certificate files.
-
-##/usr/lib/node_modules/node-red/settings.js ??
