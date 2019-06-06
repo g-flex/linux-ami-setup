@@ -118,4 +118,4 @@ https: {
     cert: fs.readFileSync('/etc/letsencrypt/live/myexampledomain.com/fullchain.pem')
 },
 ```
-Save. Remember to start node-red with sudo to grant permissions to read certificate files.
+Save. DONE!
