@@ -58,6 +58,10 @@ Edit **/etc/httpd/conf.d/ssl.conf**
 SSLCertificateFile /etc/letsencrypt/live/myexampledomain.com/fullchain.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/myexampledomain.com/privkey.pem
 ```
+```
+sudo service httpd restart
+```
+
 Yummy! Server with SSL is on!
 ***
 
@@ -97,7 +101,7 @@ sudo yum install nodejs
 ```
 Check if ok
 ```
-node-v
+node -v
 npm -v
 ```
 
@@ -105,8 +109,8 @@ npm -v
 ```
 sudo npm install -g node-red
 ```
-**Run** `node-red` **once**, creating enviroment files.
-Edit **/home/ec2-user/.node-red/settings.js** (and other setting files such as /usr/lib/node_modules/node-red/settings.js) to enable ssl
+
+Edit **/usr/lib/node_modules/node-red/settings.js** (and other setting files such as /home/ec2-user/.node-red/settings.js or /root/.node-red/settings.js) to enable ssl
 At the beginning
 ```
 var fs = require("fs");
