@@ -8,7 +8,7 @@ I will report here a sequence of mainly not explained commands, these commands a
 ### Apache
 ```
 sudo yum update -y
-sudo yum install -y httpd24 php70 mysql56-server php70-mysqlnd
+sudo yum install -y httpd24 php70 mysql57-server php70-mysqlnd
 sudo service httpd start
 ```
 Start at each boot:
