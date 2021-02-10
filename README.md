@@ -60,7 +60,7 @@ sudo ./certbot-auto --debug
 ```
 sudo certbot
 ```
-⚠️⚠️⚠️ Edit **/etc/httpd/conf.d/ssl.conf**
+Edit **/etc/httpd/conf.d/ssl.conf**
 ```
 SSLCertificateFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/fullchain.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/privkey.pem
