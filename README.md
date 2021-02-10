@@ -55,6 +55,7 @@ sudo ./certbot-auto --debug
 ```
 
 ----------------------
+----------------------
 ⚠️⚠️⚠️ If doing **AMI 2**:
 ```
 sudo certbot
@@ -64,6 +65,15 @@ sudo certbot
 SSLCertificateFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/fullchain.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/privkey.pem
 ```
+Cronjob for **auto renewal**: insert in ``crontab -e``
+```
+39      1,13    *       *       *       root    certbot renew --no-self-upgrade
+```
+Then restart cron: ``sudo systemctl restart crond``
+```
+sudo service httpd restart
+```
+----------------------
 ----------------------
 
 Edit **/etc/httpd/conf.d/ssl.conf**
