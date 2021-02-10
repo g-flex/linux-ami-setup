@@ -54,6 +54,7 @@ Uncomment and fill this line:
 sudo ./certbot-auto --debug
 ```
 
+----------------------
 ⚠️⚠️⚠️ If doing **AMI 2**:
 ```
 sudo certbot
@@ -63,6 +64,7 @@ sudo certbot
 SSLCertificateFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/fullchain.pem
 SSLCertificateKeyFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/privkey.pem
 ```
+----------------------
 
 Edit **/etc/httpd/conf.d/ssl.conf**
 ```
