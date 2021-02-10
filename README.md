@@ -53,6 +53,17 @@ Uncomment and fill this line:
 ```
 sudo ./certbot-auto --debug
 ```
+
+⚠️⚠️⚠️ If doing **AMI 2**:
+```
+sudo certbot
+```
+⚠️⚠️⚠️ Edit **/etc/httpd/conf.d/ssl.conf**
+```
+SSLCertificateFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/fullchain.pem
+SSLCertificateKeyFile /etc/letsencrypt/live/MYEXAMPLEDOMAIN.COM/privkey.pem
+```
+
 Edit **/etc/httpd/conf.d/ssl.conf**
 ```
 SSLCertificateFile /etc/letsencrypt/live/myexampledomain.com/fullchain.pem
@@ -61,7 +72,6 @@ SSLCertificateKeyFile /etc/letsencrypt/live/myexampledomain.com/privkey.pem
 ```
 sudo service httpd restart
 ```
-
 Yummy! Server with SSL is on!
 ***
 
